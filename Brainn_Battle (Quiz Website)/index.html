@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container">
+        <img src="Brain_Battle copy.png" alt="Brain Battle" id="logo">
+        <h1>Brain Battle </h1>
+        
+        
+
+        <!-- Category Selection -->
+        <div class="category-select">
+            <label for="categories">Choose a category:</label>
+            <select id="categories">
+                <option value="math">R programming</option>
+                <option value="science">Software Engineering</option>
+                <option value="history">Web Content</option>
+                <option value="gk">General Knowledge</option>
+            </select>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-container">
+            <h2 id="question"></h2>
+            <ul id="options-list"></ul>
+
+            <div class="buttons">
+                <button id="prev-btn" class="navigation-btn" onclick="previousQuestion()">Previous</button>
+                <button id="next-btn" class="navigation-btn" onclick="nextQuestion()">Next</button>
+                <button id="submit-btn" onclick="showAnswers()" style="display:none;">Submit</button>
+            </div>
+        </div>
+
+        <!-- Displaying Answers -->
+        <div id="answers-section" style="display: none;">
+            <h2>Your Answers</h2>
+            <ul id="answers-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

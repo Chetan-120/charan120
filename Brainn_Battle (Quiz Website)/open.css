@@ -1,0 +1,85 @@
+     /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2B3242;
+            background-image: url(Brain\ Battle.jpg);
+            background-size: 45%;
+            background-position:center;
+            background-repeat:no-repeat;
+            height: 50%;
+            
+        
+        }
+
+        /* Centered container box */
+        .container {
+            margin-top:32%; 
+            
+            padding: 20px;
+            border-radius: 13px;
+            
+            
+        }
+
+        /* Welcome message styling */
+        .welcome-message {
+            font-size: 40px;
+            color: white;
+            margin-bottom: 28px;
+            text-align: center;
+            font-family: OCR A Std, monospace;
+        }        
+
+        /* Button styling
+        .btn {
+            padding: 10px 20px;
+            font-size: 19px;
+            color: white;
+            background-color: #2B3242;
+            border: none;
+            transform: translate(15%);
+            bottom:20%;
+            border-radius:9px;
+            text-align:center;
+            font-family:  OCR A Std, monospace;
+            font-weight: bold;
+            left: 70%;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 0 10px #FFCCCB, 0 0 20px #ff00ff, 0 0 30px #FFCCCB;
+            border-color: #ff00ff;
+        }   */
+
+
+        /* Button styling */
+.btn {
+    padding: 10px 20px;
+    font-size: 19px;
+    color: white;
+    background-color: #2B3242;
+    border: none;
+    transform: translate(15%); /* Initial horizontal position */
+    bottom: 20%;
+    border-radius: 9px;
+    text-align: center;
+    font-family: OCR A Std, monospace;
+    font-weight: bold;
+    left: 70%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 10px #FFCCCB, 0 0 20px #ff00ff, 0 0 30px #FFCCCB;
+    border-color: #ff00ff;
+    transform: translate(15%) translateY(-5px) scale(1.1); /* Lift the button upwards and increase its size */
+}
